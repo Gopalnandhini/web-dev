@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>grid lines</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  </head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
 
   <style>
     .bg{
@@ -14,18 +15,29 @@
       margin: 2px;
         padding: 10px;
     }
+    .bg-br{
+        background-color: brown;
+        color: white;
+    }
+    .icon-large{
+         font-size: 24px;
+    }
+    .bg1{
+        background-color: orange;
+    }
+    
     </style>
-<boby>
+<body>
   <div class="container-fluid bg">
     <div class="row">
-      <div class="col bg">
-        <a class="nav-link" href="tel:+918939700800"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7RVBcW05LxpQB1t4hn_SaOO7qmyfmb5F2Pw&s"width="40" height="40"><b> +91 89397 00800 </b></a> 
+      <div class="col-3 bg">
+        <a class="nav-link" href="tel:+918939700800"><i class="bi bi-telephone-fill"></i><b> +91 89397 00800 </b></a> 
       </div>
-      <div class="col bg mt-1 ml-5">
-        <a class="nav-link" href="mailto:vscolourbricks@gmail.com"><img src="data:image/png;base64,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" width=40 height=40"><b>  vscolourbricks@gmail.com</b></a>
+      <div class="col-3 bg mt-1 ml-5">
+        <a class="nav-link" href="mailto:vscolourbricks@gmail.com"> <i class="bi bi-envelope-open-fill"></i><b>  vscolourbricks@gmail.com</b></a>
       </div>
-      <div class="col bg">
-        <a class="nav-link" href="tel:+917339333614"><img src="data:image/png;base64,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" height=40 weidth=40><b>15B, Gangai Amman Kovil Street, Vadapalani, Chennai-600 026</b></a>
+      <div class="col-5 bg">
+        <a class="nav-link" href="tel:+917339333614" style="justify-content: center;"><i class="bi bi-geo-alt-fill"></i><b style="justify-content: center;">15B, Gangai Amman Kovil Street, Vadapalani, Chennai-600 026</b></a>
       </div>
     </div>
   </div>
@@ -83,6 +95,68 @@
   <br>
   <br>
   <br>
+  <div class="b-example-divider"></div>
+
+<div class="container-fluid">
+  <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 border-top bg-br">
+    <div class="col-3 text-center">
+      <a href="/" class="d-flex align-items-center mb-3 "><img src="https://colourbricks.co.in/wp-content/uploads/2023/03/colour-bricks-footer-2.png" width="380" height="100">
+      </a>
+      <p>When we come to construction, we don’t just build structures, we build relationships with you and our construction work.</p>
+    </div>
+
+    <div class="col-2 mb-3">
+
+    </div>
+
+    <div class="col">
+      <h5><b>Navigation</b></h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="https://colourbricks.co.in/" class="nav-link bg-br "><i class="bi bi-chevron-right"></i>Home</a></li>
+        <li class="nav-item mb-2"><a href="https://colourbricks.co.in/about-us/" class="nav-link bg-br "><i class="bi bi-chevron-right"></i>about us</a></li>
+        <li class="nav-item mb-2"><a href="https://colourbricks.co.in/services/" class="nav-link bg-br "><i class="bi bi-chevron-right"></i>Services</a></li>
+        <li class="nav-item mb-2"><a href="https://colourbricks.co.in/projects/" class="nav-link bg-br "><i class="bi bi-chevron-right"></i>Project</a></li>
+        <li class="nav-item mb-2"><a href="https://colourbricks.co.in/our-works-gallery/" class="nav-link bg-br "><i class="bi bi-chevron-right"></i>Gallery</a></li>
+        <li class="nav-item mb-2"><a href="https://colourbricks.co.in/contact-us/" class="nav-link bg-br "><i class="bi bi-chevron-right"></i>contact us</a></li>
+      </ul>
+    </div>
+
+    <div class="col" style="padding-right:100;" >
+      <h5><b>Services</b></h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="https://colourbricks.co.in/services/#design%20&%20planning" class="nav-link bg-br"><i class="bi bi-chevron-right"></i>Design and palnning</a></li>
+        <li class="nav-item mb-2"><a href="https://colourbricks.co.in/services/#3d%20drawing" class="nav-link bg-br"><i class="bi bi-chevron-right"></i>Architectural 3D Drawing</a></li>
+        <li class="nav-item mb-2"><a href="https://colourbricks.co.in/services/#Permitting%20&%20Approvals" class="nav-link bg-br "><i class="bi bi-chevron-right"></i>Permitting and Approvals</a></li>
+        <li class="nav-item mb-2"><a href="https://colourbricks.co.in/services/#Renovation" class="nav-link bg-br"><i class="bi bi-chevron-right"></i>Renovation</a></li>
+        <li class="nav-item mb-2"><a href="https://colourbricks.co.in/services/#Consulting%20&%20Promoting%20Services" class="nav-link bg-br"><i class="bi bi-chevron-right"></i>Consulting and Promoting Services</a></li>
+        <li class="nav-item mb-2"><a href="https://colourbricks.co.in/services/#Interior%20&%20Exterior%20Modelling" class="nav-link bg-br"><i class="bi bi-chevron-right"></i>Interior and Exterior Modelling</a></li>
+      </ul>
+    </div>
+
+    <div class="col mb-3">
+      <h5><b>Information</b></h5>
+      <p>15B, Gangai Amman kovil Street, Vadapalani, Chennai–600 026</p><br>
+      <p><i class="bi bi-person-fill bg-br icon-large"></i> R.Ravichandran BE, ME(structural)</p>
+      <a class="nav-link" href="mailto:vscolourbricks@gmail.com"> <i class="bi bi-envelope-fill"></i> vscolourbricks@gmail.com</a><br>
+      <a class="nav-link" href="tel:+918939700800"><i class="bi bi-telephone-fill"></i> +91 89397 00800 </a> 
+
+
+    </div>
+    
+  </footer>
+  <div class="container-fluid ">
+    <div class="row">
+      <div class="col-6 bg1 text-center">
+        <p><b> Copyright © 2024. All Rights Reserved. Colour Bricks Construction.</b></p>
+      </div>
+      <div class="col-6 bg1 text-center">
+        <p><b> Designed by Olir Designs Pvt. Ltd.,</b></p>
+      </div>
+    </div>
+  </div>
+  
+    </div>  
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
