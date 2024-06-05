@@ -1,0 +1,20 @@
+h1{
+    text-align: center;
+    color: aliceblue;
+    background-color: blue;
+    font-family: 'Times New Roman', Times, serif;
+}
+p{
+    text-align: justify;
+    font-size: large;
+    background-color: chartreuse;
+    font-family: cursive;
+    color: crimson;
+}
+h2{
+    color: red;
+    
+}
+button{
+    background-color: darkblue;
+}
