@@ -1,4 +1,4 @@
-h1{
+.one{
     text-align: center;
     color: aliceblue;
     background-color: blue;
@@ -11,10 +11,11 @@ p{
     font-family: cursive;
     color: crimson;
 }
-h2{
+.two{
     color: red;
     
 }
-button{
-    background-color: darkblue;
+.bg{
+    background-color: darkred;
+    color: aqua;
 }
