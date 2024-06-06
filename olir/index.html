@@ -6,16 +6,17 @@
     <title>grid lines</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <script src="https://kit.fontawesome.com/4b527de4ca.js" crossorigin="anonymous"></script>
+    
 </head>
 <style>
+ 
   .icon{
      font-size: 60px;
      color: #F7AD42;
   }
     .center-image{
         display:block;
-        margin: 0 auto;
+        margin: auto auto;
 
     }
     .icon-large{
@@ -33,12 +34,13 @@
     }
     .card{
       background-color: #F1F6F9;
-    margin: 15px;
-    padding: 20px;
+     margin: 10px;
+     padding: 0 10px;
     height: 400px; 
     border: #F1F6F9;
     text-align: center;
-    }
+  
+   }
     h3{
       text-align: center;
     }
@@ -58,6 +60,18 @@
     height: 300px;
     width: 100%;
     padding: 50px;
+   }
+   body{
+    max-width: 100%;
+    overflow-x: hidden;
+
+   }
+   @media (max-width : 600px) {
+    .img-fluid{
+           height: 190px;
+           width: 100%;
+    }
+    
    }
 </style>
   <body>
@@ -125,23 +139,26 @@
   
   <div class="container">
         <div class="row">
-        <div class="col-4">
+        <div class="col-sm-12 col-md-6 col-lg-4 ">
           <div class="card justify-content-center">
+            
           <i class="fa-regular fa-images icon"></i><br>
           <h3><b>Graphic design</b></h3>
           <br>
           <p>We design the shorthand marketing messages that create emotional bonds</p>
         </div>
         </div>
-        <div class="col-4">
+        
+        <div class="col-sm-12 col-md-6 col-lg-4">
           <div class="card justify-content-center">
+            
             <i class="fa-solid fa-earth-americas icon"></i><br>
          <h3><b>web design</b></h3>
          <br>
           <p>We embrace varieties of contrasting competencies in the presentation anf maintenance of websites.</p>
         </div>
         </div>
-        <div class="col-4">
+        <div class="col-sm-12 col-md-6 col-lg-4">
           <div class="card justify-content-center">
             <i class="fa-solid fa-pen-ruler icon"></i><br>
          <h3><b>UI/UX</b></h3>
@@ -149,7 +166,7 @@
           <p>We think from the user's perspective and make hassle free product functionality.</p>
         </div> 
         </div>
-        <div class="col-4">
+        <div class="col-sm-12 col-md-6 col-lg-4">
           <div class="card justify-content-center">
             <i class="fa-solid fa-globe icon"></i><br>
          <h3><b>Digital marketing</b></h3>
@@ -157,7 +174,7 @@
          <p>As the World Economy Continues its Digital Transformation, the Significance of Digital Marketing Grows Daily.</p>
        </div>
        </div>
-       <div class="col-4">
+       <div class="col-sm-12 col-md-6 col-lg-4">
         <div class="card justify-content-center">
           <i class="fa-solid fa-newspaper icon"></i><br>
         <h3><b>SEO</b></h3>
@@ -165,7 +182,7 @@
          <p>Organizations like Google and Bing have begun to play a more important role in how you do business.</p>
        </div>
        </div>
-       <div class="col-4">
+       <div class="col-sm-12 col-md-6 col-lg-4">
         <div class="card justify-content-center">
           <i class="fa-sharp fa-solid fa-book-open-reader icon"></i><br>
           <h3><b>Content marketing</b></h3>
@@ -176,9 +193,8 @@
        </div>
       
 
-  <br>
-  <br>
-  <h1 class="text-center">Gallery of Crafts</h1>
+  
+  <h1 class="text-center mt-5 mb-5">Gallery of Crafts</h1>
   <p class="text-center" style="font-size: 20px;">Highlights of our recent projects with each connecting to a detailed overview</p>
   <div class="row">
  <img src="https://olirdesigns.com/wp-content/uploads/2023/06/Geetha-720x563.png" style="width: 380px; height: 300px; padding: 20px;">
@@ -191,13 +207,7 @@
  <img src="https://olirdesigns.com/wp-content/uploads/2022/05/Jk_art_Flyer3-720x563.jpg" style="width: 380px; height: 300px; padding: 20px;">
 </div>
  
-<br>
-<a href="https://olirdesigns.com/our-works/" class="btn"><b>View all</b></a>
-<br>
-<br>
-<br>
-<br>
-<h1 class="text-center">How It Works</h1>
+<h1 class="text-center mt-5">How It Works</h1>
 <p class="text-center" style="font-size: 20px;">Mapping out the sequential tasks included to take a project from commenced to processed</p>
 <br>
 <div class="row">
@@ -224,15 +234,12 @@
 </div>
 <br>
 <br>
-<h1 style="width: 100%; background-color: #031117; color: white; text-align: center; height: 200px; padding-top: 60px;">Where Creativity Meets Quality!</h1>
-<br>
-<br>
-<br>
-<br>
+<h1 style="width: 100%; margin-bottom: 30px;  background-color: #031117; color: white; text-align: center; height: 200px; padding-top: 60px;">Where Creativity Meets Quality!</h1>
+
 <div class="container">
   <div class="row">
     <div class="col">
-      <img src="https://olirdesigns.com/wp-content/uploads/2021/06/olir-home.jpg" height="450" width="600">
+      <img src="https://olirdesigns.com/wp-content/uploads/2021/06/olir-home.jpg"  class="img-fluid" height="450" width="100%">
     </div>
     <div class="col">
       <br>
@@ -323,7 +330,7 @@
 
   </footer>
 </div>
-
+<script src="https://kit.fontawesome.com/4b527de4ca.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
