@@ -1,3 +1,4 @@
+
 .pic{
     width: 700px;
     height: 500px;
@@ -19,6 +20,14 @@ p{
     font-size: 18px;
     text-align: justify;
 }
-.cols{
+.col{
     padding-left: 30px;
 }
+.center-image{
+        display:block;
+        margin: auto;
+
+    }
+.icon-large{
+         font-size: 30px;
+    }
