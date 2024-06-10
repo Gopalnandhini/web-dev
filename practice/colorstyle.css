@@ -1,0 +1,16 @@
+.bg{
+    background-color: brown;
+    color:white;
+    margin: 2px;
+      padding: 10px;
+  }
+  .bg-br{
+    background-color: brown;
+    color: white;
+}
+.icon-large{
+     font-size: 24px;
+}
+.bg1{
+    background-color: orange;
+}
