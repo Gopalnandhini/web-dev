@@ -6,28 +6,10 @@
     <title>grid lines</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="index.css" type="text/css">
 </head>
-
-  <style>
-    .bg{
-      background-color: brown;
-      color:white;
-      margin: 2px;
-        padding: 10px;
-    }
-    .bg-br{
-        background-color: brown;
-        color: white;
-    }
-    .icon-large{
-         font-size: 24px;
-    }
-    .bg1{
-        background-color: orange;
-    }
-    
-    </style>
 <body>
+  <!--header-->
   <div class="container-fluid bg">
     <div class="row">
       <div class="col-3 bg">
@@ -93,11 +75,78 @@
     
     </div>
   </nav>
-  <br>
-  <br>
-  <br>
-  <div class="b-example-divider"></div>
+  <div class="container-fluid">
+    <h2 class="text-center">Our Project Gallery</h2>
 
+    <div class="card">
+      <h2 class="text-center">We Have Great & Quality Worker For Safe <br>Construction</h2>
+      <div class="row">
+        <div class="column">
+          <img src="https://colourbricks.co.in/wp-content/uploads/2023/03/ongoing21-scaled.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor hover-shadow1">
+        </div>
+        <div class="column">
+          <img src="https://colourbricks.co.in/wp-content/uploads/2023/03/IMG20210906111651-scaled.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor hover-shadow1">
+        </div>
+        <div class="column">
+          <img src="https://colourbricks.co.in/wp-content/uploads/2023/04/Raja-Thirumalisai15-scaled.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor hover-shadow1">
+        </div>
+        <div class="row">
+        <div class="column">
+          <img src="https://colourbricks.co.in/wp-content/uploads/2023/03/IMG_20220304_074012-scaled.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor hover-shadow1">
+        </div>
+      </div>
+      </div>
+      
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+      
+          <div class="mySlides">
+            <div class="numbertext">1 / 4</div>
+            <img src="https://colourbricks.co.in/wp-content/uploads/2023/03/ongoing21-scaled.jpg" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">2 / 4</div>
+            <img src="https://colourbricks.co.in/wp-content/uploads/2023/03/IMG20210906111651-scaled.jpg" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">3 / 4</div>
+            <img src="https://colourbricks.co.in/wp-content/uploads/2023/04/Raja-Thirumalisai15-scaled.jpg" style="width:100%">
+          </div>
+          
+          <div class="mySlides">
+            <div class="numbertext">4 / 4</div>
+            <img src="https://colourbricks.co.in/wp-content/uploads/2023/03/IMG_20220304_074012-scaled.jpg" style="width:100%">
+          </div>
+          
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+      
+      
+          <div class="column">
+            <img class="demo cursor" src="https://colourbricks.co.in/wp-content/uploads/2023/03/ongoing21-scaled.jpg" style="width:100%" onclick="currentSlide(1)">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="https://colourbricks.co.in/wp-content/uploads/2023/03/IMG20210906111651-scaled.jpg" style="width:100%" onclick="currentSlide(2)">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="https://colourbricks.co.in/wp-content/uploads/2023/04/Raja-Thirumalisai15-scaled.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="https://colourbricks.co.in/wp-content/uploads/2023/03/IMG_20220304_074012-scaled.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!--footer-->
 <div class="container-fluid">
   <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 border-top bg-br">
     <div class="col-3 text-center">
@@ -157,7 +206,7 @@
   </div>
   
     </div>  
-
+  <script src="index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
