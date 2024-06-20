@@ -1,0 +1,19 @@
+.card{
+    width: 500px;
+    height: 800px;
+    background-color: linear-gradient (135deg, #00feba, #5b548a);
+    color: #fff;
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+}
+.search-bar{
+    border-radius: 40px;
+    background-color: rgb(235, 233, 233);
+    margin-right: 30px;
+}
+.search i{
+    background-color: rgb(235, 233, 233);
+    
+}
