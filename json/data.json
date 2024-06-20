@@ -1,0 +1,17 @@
+ [
+    {
+        "name" : "Nandhini",
+        "department" : "BCA",
+        "certifications" : ["full stack development" , "python"]
+    },
+    {
+        "name" : "Priyavijitha",
+        "department" : "BCA",
+        "certifications" : ["full stack development" , "c" , "c++"]
+    },
+    {
+        "name" : "eichavathi",
+        "department" : "BCA",
+        "certifications" : ["full stack development" , "java"]
+    }
+]
