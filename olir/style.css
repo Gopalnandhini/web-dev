@@ -179,16 +179,22 @@
         height: auto; /* Maintain aspect ratio */
       }
       .con{
-        position: relative;
-        height: 200px; /* Adjust height as needed */
         width: 100%;
+        background-color: #F9F3F2;
+        height: 650px;
+        margin-top: -20px;
+        padding-top: 100px;
+      }
+      .hoim{
+        margin-top: -350px;
       }
       
       .animated-text {
-        position: absolute;
+        position: relative;
         bottom: 0;
         opacity: 0;
         animation: slide-up 1s forwards;
+        margin: 20px auto;
       }
       
       @keyframes slide-up {
@@ -233,3 +239,5 @@
         visibility: visible;
         opacity: 1;
     }
+  
+  
