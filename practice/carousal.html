@@ -107,3 +107,171 @@
 </script>
 </body>
 </html>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiple Items Carousel</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+  <style>
+    /* Your custom CSS styles here */
+    .carousel {
+      display: flex;
+      overflow-x: auto; /* Horizontal scroll for overflow */
+      scroll-snap-type: x mandatory; /* Snap to each image */
+    }
+    .slide {
+      flex: 0 0 auto; /* Disable flex grow and shrink */
+      margin-right: 10px; /* Adjust spacing between images */
+    }
+    .slide img {
+      max-width: 100%; /* Ensure images don't exceed container width */
+      height: auto; /* Maintain aspect ratio */
+    }
+    .carousel-container {
+      width: 80%; /* Adjust width as needed */
+      margin: 0 auto;
+      position: relative;
+    }
+    .slick-prev,
+    .slick-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      font-size: 24px;
+      color: #000;
+    }
+    .slick-prev {
+      left: 10px;
+    }
+    .slick-next {
+      right: 10px;
+    }
+    .slick-dots {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .slick-dots li {
+      display: inline-block;
+      margin: 0 3px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="carousel-container">
+  <h1 class="text-center"><b>Clients</b></h1>
+  <div class="carousel">
+    <div class="carousel-item slide"><img src="https://olirdesigns.com/wp-content/uploads/2022/07/kripala-client.png"></div>
+    <div class="carousel-item slide"><img src="https://olirdesigns.com/wp-content/uploads/2022/07/vilvatech-client.png"></div>
+    <div class="carousel-item slide"><img src="https://olirdesigns.com/wp-content/uploads/2022/07/diahome-client.png"></div>
+    <div class="carousel-item slide"><img src="https://olirdesigns.com/wp-content/uploads/2022/07/cupids-client.png" ></div>
+    <div class="carousel-item slide"><img src="https://olirdesigns.com/wp-content/uploads/2022/07/TCC-client.png" ></div>
+    <div class="carousel-item slide"><img src="https://olirdesigns.com/wp-content/uploads/2022/07/iyer-coffee-client.png" ></div>
+    <div class="carousel-item slide"><img src="https://olirdesigns.com/wp-content/uploads/2022/07/akshayams-client.png"></div>
+    <div class="carousel-item slide"><img src="https://olirdesigns.com/wp-content/uploads/2022/07/goldcup-client.png"></div>
+    <div class="carousel-item slide"><img src="https://olirdesigns.com/wp-content/uploads/2022/07/signature-client.png"></div>
+    <div class="carousel-item slide"><img src="https://olirdesigns.com/wp-content/uploads/2022/07/kripala-client.png"></div>
+    <!-- Add more carousel items as needed -->
+  </div>
+  <button class="slick-prev" onclick="prevSlide()" style="color:black;">&#10094;</button>
+  <button class="slick-next" onclick="nextSlide()" style="color:black;">&#10095;</button>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.carousel').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      prevArrow: $('.slick-prev'),
+      nextArrow: $('.slick-next'),
+      dots: true,
+      infinite: false,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+  });
+
+  function nextSlide() {
+    $('.carousel').slick('slickNext');
+  }
+
+  function prevSlide() {
+    $('.carousel').slick('slickPrev');
+  }
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.carousel {
+  display: flex;
+  overflow: hidden; /* Horizontal scroll for overflow */
+  scroll-snap-type: x mandatory; /* Snap to each image */
+  position: relative;
+}
+.slide {
+  flex: 0 0 auto; /* Disable flex grow and shrink */
+  margin-right: 10px; /* Adjust spacing between images */
+}
+.slide img {
+  max-width: 100%; /* Ensure images don't exceed container width */
+  height: auto; /* Maintain aspect ratio */
+}
+.carousel-container {
+  width: 80%; /* Adjust width as needed */
+  margin: 0 auto;
+  position: relative;
+
+}*/
