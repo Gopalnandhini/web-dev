@@ -121,15 +121,25 @@
         border-width: 3px;
       
        }
-       .carousel-container {
-        width: 80%; /* Adjust width as needed */
-        margin: 0 auto;
-        position: relative;
-        
+       .carousel {
+        position: relative; /* Ensure relative positioning */
+        overflow: hidden; /* Hide any overflow */
+      }
+      .carousel-item {
+        flex: 0 0 auto; /* Disable flex grow and shrink */
+        scroll-snap-align: start; /* Snap to start of each image */
+        margin-right: 10px; /* Adjust spacing between images */
       }
       .carousel-item img {
-        width: 100%;
+        max-width: 100%; /* Ensure images don't exceed container width */
+        height: auto; /* Maintain aspect ratio */
       }
+      .carousel-container {
+        width: 80%; /* Adjust width as needed */
+        margin: 0 auto;
+      }
+  
+    
       .slick-prev,
       .slick-next {
         position: absolute;
@@ -143,12 +153,10 @@
         color: #000;
       }
       .slick-prev {
-        left: 10px;
-        color : black;
+        float: left;
       }
       .slick-next {
-        right: 10px;
-        color : black;
+        float: right;
       }
       .slick-dots {
         position: absolute;
@@ -163,21 +171,7 @@
         display: inline-block;
         margin: 0 3px;
       }
-      .carousel {
-        display: flex;
-        overflow-x: auto; /* Horizontal scroll for overflow */
-        overflow-y: hidden;
-        scroll-snap-type: x mandatory; /* Snap to each image */
-      }
-      .slide {
-        flex: 0 0 auto; /* Disable flex grow and shrink */
-        scroll-snap-align: start; /* Snap to start of each image */
-        margin-right: 10px; /* Adjust spacing between images */
-      }
-      .slide img {
-        max-width: 100%; /* Ensure images don't exceed container width */
-        height: auto; /* Maintain aspect ratio */
-      }
+      
       .con{
         width: 100%;
         background-color: #F9F3F2;

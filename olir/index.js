@@ -96,3 +96,4 @@ document.getElementById("whatsapp-icon").addEventListener("click", function() {
   // Replace `your_whatsapp_number` with your actual WhatsApp number
   window.open("https://api.whatsapp.com/send?phone=your_whatsapp_number", "_blank");
 });
+
